@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Covid-19</title>
+</head>
+<body>
+    <div class="top-bar">
+        <img src="logo.png" width="50px" height="50px">
+        <h1 class="main-title">Covid-19</h1>
+    </div>
+    <div class="search">
+        <select type="text" id="input-search" onchange="GetSelectedCountry()">
+            <option id="list-item">Keresés...</option>
+        </select>
+    </div>
+    
+    <div class="background">
+        <div class="container">
+            <div class="country-wrapper">
+                <h2 class="country" id="country">Betöltés...</h2>
+            </div>
+            <div class="content">
+                <div class="card">
+                    <div class="card-mid">
+                        <div class="title">
+                            <label>Összes eset:</label>
+                        </div>
+                        <div class="value">
+                            <h2 id="confirmed">Betöltés...</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-mid">
+                        <div class="title">
+                            <label>Meggyógyult:</label>
+                        </div>
+                        <div class="value">
+                            <h2 id="recovered">Betöltés...</h2>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div class="card-mid">
+                        <div class="title">
+                            <label>Elhunyt:</label>
+                        </div>
+                        <div class="value">
+                            <h2 id="deaths">Betöltés...</h2>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+    </div>
+    </div>
+    <div class="footer">
+        Copyright &copy; 2020.
+    </div>
+    
+    
+<script src="app.js"></script>
+</body>
+</html>
